@@ -1,3 +1,24 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
+
+#project-slider .swiper-button-next,
+#project-slider .swiper-button-prev {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+#project-slider .swiper-button-next:hover,
+#project-slider .swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#project-slider .swiper-button-next::after,
+#project-slider .swiper-button-prev::after {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

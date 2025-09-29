@@ -185,10 +185,10 @@
             </h2>
           </div>
           <p class="text-sm">
-            Budi Darma University student majoring in Informatics Engineering
-            with Internship Experience as a Junior Programmer at a software
-            house company, where he successfully contributed to the development
-            of the company's products.
+            A recent Computer Science graduate with professional experience as a
+            Backend Developer. Experienced in developing Laravel-based digital
+            products, building RESTful APIs, designing database structures, and
+            implementing clean architecture principles for scalable systems.
           </p>
 
           <div class="flex gap-3 z-10">
@@ -209,7 +209,7 @@
             </a> -->
             <a
               class="border border-white cursor-pointer font-medium w-fit px-5 py-2 rounded-sm flex items-center gap-3 hover:bg-white duration-300 hover:text-[#060405]"
-              href="https://drive.google.com/file/d/1I81zMmOLWhEq7KxMb2627Z9ajxJDPshN/view?usp=sharing"
+              href="https://drive.google.com/file/d/1l4b4IP9q8r3PJB40tVa30-bnzPFaj7pt/view?usp=sharing"
               target="_blank"
             >
               Resume
@@ -290,7 +290,7 @@
           >
             <!-- KANAN -->
             <div
-              class="md:border-l border-black w-full p-2 md:pl-5 col-start-2 row-start-1 -ml-[0.5px] relative "
+              class="md:border-l border-black w-full p-2 md:pl-5 col-start-2 row-start-1 -ml-[0.5px] relative"
             >
               <div
                 class="hidden md:block rounded-full absolute h-3 w-3 bg-black -left-[6px] top-3"
@@ -664,7 +664,29 @@
         <hr class="my-2" />
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 gap-5">
-          <div class="flex flex-col bg-white p-5 rounded-sm shadow-sm">
+          <div
+            class="portfolio-item flex flex-col bg-white p-5 rounded-sm shadow-sm cursor-pointer hover:shadow-xl transition-shadow duration-300"
+            data-project-id="simpera"
+          >
+            <img
+              src="./assets/images/portfolio/simpera/1.png"
+              alt="SIMPERA"
+              class="object-cover w-full h-48 mb-5 rounded-t-sm"
+            />
+            <h4 class="text-lg font-bold">
+              SIMPERA: Academic Correspondence Information System
+            </h4>
+            <hr class="my-2" />
+            <p>
+              A web application for digitizing the academic correspondence
+              workflow on campus.
+            </p>
+          </div>
+
+          <div
+            class="portfolio-item flex flex-col bg-white p-5 rounded-sm shadow-sm"
+            data-project-id="empathicare"
+          >
             <img
               src="./assets/images/portfolio/EmpathiCare.png"
               alt="Akastra Website"
@@ -850,8 +872,28 @@
         </a>
       </section>
       <!-- End Footer  -->
+
+      <div
+        id="portfolio-modal"
+        class="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-5 transition-opacity duration-300 ease-in-out opacity-0 invisible"
+      >
+        <div
+          id="modal-box"
+          class="bg-white rounded-lg shadow-xl w-full max-w-3xl max-h-[90vh] overflow-y-auto relative transition-transform duration-300 ease-in-out scale-95"
+        >
+          <button
+            id="close-modal-btn"
+            class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl z-10"
+          >
+            &times;
+          </button>
+
+          <div id="modal-content-container" class="p-8"></div>
+        </div>
+      </div>
     </main>
 
+    <script src="./data.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
