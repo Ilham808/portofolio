@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const swiperSlidesHTML = projectData.gallery
           .map(
             (imgSrc) => `
-                    <div class="swiper-slide"><img src="${imgSrc}" class="w-full h-full object-contain"></div>`
+                    <div class="swiper-slide"><img src="${imgSrc}" loading="lazy" class="w-full h-full object-contain"></div>`
           )
           .join("");
         modalHTML = `
